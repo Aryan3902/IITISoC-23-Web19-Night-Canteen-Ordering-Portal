@@ -1,9 +1,9 @@
 import React from "react";
-import Background from "./Background";
-import Button from "./Button";
-import LoginBar from "./loginBar";
+import Background from "../components/background";
+import Button from "../components/button";
+import LoginBar from "../components/loginBar";
 
-function App() {
+function loginPage() {
     return (
         <div id="container">
 <Background />
@@ -34,4 +34,4 @@ function App() {
     );
 }
 
-export default App;
+export default loginPage;
