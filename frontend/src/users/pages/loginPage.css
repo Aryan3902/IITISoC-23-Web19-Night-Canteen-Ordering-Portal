@@ -83,3 +83,6 @@
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
 }
+.login-button:hover {
+  background-color: #cc6504;
+}

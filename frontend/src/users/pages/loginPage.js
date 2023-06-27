@@ -2,6 +2,7 @@ import React from "react";
 import Background from "../components/background";
 import Button from "../components/button";
 import LoginBar from "../components/loginBar";
+import '.\loginPage.css' ;
 
 function loginPage() {
     return (
