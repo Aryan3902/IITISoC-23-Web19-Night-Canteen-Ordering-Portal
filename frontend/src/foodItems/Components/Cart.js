@@ -15,7 +15,13 @@ return (
             <p>My Cart</p>
         </div>
         <p>Items Selected <span>({size})</span></p>
-        {cart.map((cartItem)=><FoodCard key={cartItem.id} name={cartItem.name} price={cartItem.price} />)}
+        <div className="cart-item-container">
+            {cart.map((cartItem)=><FoodCard key={cartItem.id} name={cartItem.name} price={cartItem.price} />)}
+        </div>
+        <div className="order-button-container">
+            <button className="order-button">ORDER</button>
+        </div>
     </div>
 );
 }
+

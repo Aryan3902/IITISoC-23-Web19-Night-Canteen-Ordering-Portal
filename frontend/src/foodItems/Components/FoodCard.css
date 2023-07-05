@@ -1,7 +1,9 @@
 .food-card-container{
-    display: flex;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 80px 200px auto  ;
+    grid-template-rows: 80px;
     align-items: center;
-    gap: 20px;
 }
 .circle {
     height: 70px;
@@ -11,11 +13,10 @@
 }
 .number-button-container {
     display: flex;
-    position: absolute;
-    right: 50px;
+    position: relative;
+    right: 10px;
     gap: 10px;
     align-items: center;
-
 }
 .number-button-container>p{
     margin:0;
@@ -23,4 +24,11 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+.number-button-container>button{
+    background-color: #ffffff00;
+    border: 0;
+}
+.text-container>p{
+    margin: 0;
 }

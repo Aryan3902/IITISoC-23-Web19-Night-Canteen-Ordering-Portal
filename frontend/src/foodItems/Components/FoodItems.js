@@ -2,6 +2,7 @@ import React from "react";
 import CategoryType from "./CategoryType";
 import CategoryCard from "./CategoryCard.js";
 import categories from "../Arrays/categorytypes";
+import "./FoodItems.css";
 
 export default function FoodItems({handleClick}){
 return (
