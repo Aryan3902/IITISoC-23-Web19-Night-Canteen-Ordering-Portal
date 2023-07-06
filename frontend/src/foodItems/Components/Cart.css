@@ -1,7 +1,7 @@
 .cart {
     position: sticky;
     top:0;
-    height: 90vh;
+    height: 95vh;
     width: 100%;
     border-radius: 20px;
     background: var(--white-bg-transparent, rgba(255, 254, 254, 0.30));
@@ -35,7 +35,10 @@ span {
     margin-top: 5%;
     height: 60px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+}
+.order-button-container>p{
+    margin: 0;
 }
 .order-button {
     background-color: orange;

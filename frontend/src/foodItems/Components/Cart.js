@@ -1,9 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import FoodCard from "./FoodCard";
 import './Cart.css'
 
 
-export default function Cart({size, cart}){
+
+export default function Cart({size, cart,setCart, handleChange}){
+    const [price,setPrice]=useState(0);
+    const handlePrice = ()=> {
+        let ans=0;
+        cart.map((cartItem)=>(ans+=cartItem.amount*cartItem.price))
+        setPrice(ans);
+    }
+    useEffect(()=>{
+        handlePrice();
+    })
+
+    const handleRemove = (id) =>{
+        const arr = cart.filter((item)=>item.id !== id);
+        setCart(arr);
+        // handlePrice();
+    }
 return (
     <div className="cart">
         <div className="container-my-cart">
@@ -16,9 +32,10 @@ return (
         </div>
         <p>Items Selected <span>({size})</span></p>
         <div className="cart-item-container">
-            {cart.map((cartItem)=><FoodCard key={cartItem.id} name={cartItem.name} price={cartItem.price} />)}
+            {cart.map((cartItem)=><FoodCard key={cartItem.id} cartItem={cartItem} handleChange={handleChange} handleRemove={handleRemove}/>)}
         </div>
         <div className="order-button-container">
+            <p>Total Price <br /><span>{price}</span>/-</p>
             <button className="order-button">ORDER</button>
         </div>
     </div>

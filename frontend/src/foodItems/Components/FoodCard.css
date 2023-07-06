@@ -1,9 +1,11 @@
 .food-card-container{
     display: grid;
+    position: relative;
     width: 100%;
     grid-template-columns: 80px 200px auto  ;
     grid-template-rows: 80px;
     align-items: center;
+    margin: 10px 0;
 }
 .circle {
     height: 70px;
@@ -31,4 +33,13 @@
 }
 .text-container>p{
     margin: 0;
+}
+.remove-button-container{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.remove-button{
+    background-color: #ffffff00;
+    border: 0;
 }

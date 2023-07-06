@@ -2,7 +2,7 @@
 .box {
     position: absolute;
     display: grid;
-    width: 100vw;
+    width: 100%;
     grid-template-columns: 850px auto 450px ;
     grid-template-rows: auto ;
     padding: 40px;
