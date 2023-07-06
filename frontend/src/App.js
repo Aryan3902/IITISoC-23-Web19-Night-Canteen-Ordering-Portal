@@ -1,5 +1,7 @@
 import './App.css';
-import Navbar3 from './components/Navbar3'
+
+import MenuPage from './foodItems/Pages/menuPage';
+import Background from "./users/components/background"
 // import About from './components/About'
 // import {
 //   BrowserRouter as Router,
@@ -12,7 +14,8 @@ import Navbar3 from './components/Navbar3'
 function App() {
   return (
     <>
-      <Navbar3/>
+      <Background />
+      <MenuPage />
     </>
   );
 }
