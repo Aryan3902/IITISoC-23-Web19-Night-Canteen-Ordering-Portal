@@ -2,9 +2,13 @@ const mongoose = require('mongoose');
 const canteenmenu = new mongoose.Schema({
   name: String,
   price: Number,
-  description: String,
-  id: String
+  category: String,
+  id: Number
 });
+
+
+const Menu = mongoose.model('Menu', canteenmenu);
+module.exports = Menu;
 
 
 
@@ -14,7 +18,4 @@ const canteenmenu = new mongoose.Schema({
 //     description: String,
 //     id:String 
 //  };
-
-
-const Menu = mongoose.model('Menu', canteenmenu);
-module.exports = Menu;
+// export default canteenmenu;
